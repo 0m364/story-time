@@ -6,6 +6,7 @@ def get_api_key():
 
 def get_story_type():
     story_types = ["children", "fantasy", "adventure", "sci-fi", "mystery"]
+    print("Available story types: {}".format(", ".join(story_types)))
     story_type = input("What kind of story would you like to hear? ")
     while story_type not in story_types:
         print("Please select a valid story type.")
